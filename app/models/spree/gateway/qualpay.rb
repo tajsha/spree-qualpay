@@ -2,7 +2,7 @@ module Spree #:nodoc:
   class Gateway::Qualpay < Gateway
       preference :merchantid, :string
       preference :security_key, :string
-      LIVE_URL = 'https://api.qualpay.com/pg/sale'
+      LIVE_URL = 'https://api-test.qualpay.com/pg/sale'
       TEST_URL = 'https://api-test.qualpay.com/pg/sale'
 
       def initialize(options = {})
