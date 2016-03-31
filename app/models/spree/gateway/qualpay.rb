@@ -5,11 +5,6 @@ module Spree #:nodoc:
       LIVE_URL = 'https://api-test.qualpay.com/pg/sale'
       TEST_URL = 'https://api-test.qualpay.com/pg/sale'
 
-      def initialize(options = {})
-        requires!(options, :merchantid, :security_key)
-        super
-      end
-
       def provider_class
         Spree::Gateway::Qualpay
       end
